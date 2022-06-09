@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        .slider{
+           
+            width: 35%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .slider-btn{
+           
+            
+            align-items: center;
+            max-width: 350px;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+        button{
+            background:black;
+            color: white;
+            padding: 10px;
+            border: none;
+             border-radius: 10px ;
+             margin: 0 10px;
+             cursor: pointer;
+        }
+        button:hover{
+            background: white;
+            color: black;
+           border: 1px solid black;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="slider">
+        <div class="slider-image "id= "slider_div" >
+
+            <img id="img" src="images/1.jpg" alt="" width="380px" height="600px">
+        </div>
+        <div class="slider-btn">
+            <button id="prev_btn">Previous</button>
+            <button id="next_btn">Next</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+
+
+
+
+</body>
+
+</html>
