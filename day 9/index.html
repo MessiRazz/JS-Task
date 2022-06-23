@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .card-title{
+            display: flex;
+            background: yellow;
+            justify-content: space-around;
+            align-items: center;
+        }
+        button{
+            padding: 20px;
+            background: #000;
+            color: aqua;
+            cursor: pointer;
+            /* display: none; */
+        }
+        .old{
+            text-decoration: line-through;
+        }
+        .card-details{
+            width: 50%;
+            margin: auto;
+            display: none;
+            padding: 20px;
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+    <div class="card-title">
+        <h1>T-shirt 20$</h1>
+        <button id="btn">details</button>
+        </div>
+        <div class="card-details" id="details">
+            <img src="men-s-travel-trekking-shirt-travel100-warm-bordeaux.jpg" style="height: 400px;" width="500px">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde consequatur veniam molestiae deserunt fuga libero adipisci amet beatae, voluptatum tempore asperiores harum, magnam nemo!</p>
+            <p>Price:
+                <span class="old">$5</span>
+                <span>$2</span>
+            </p>
+    </div>    
+    </div>
+     
+    <script>
+        let isshown = false;
+        document.getElementById('btn').addEventListener('click',function(e){
+            e.preventDefault()
+            if(isshown){
+                document.getElementById('details').style.display='none';
+                document.getElementById('btn').innerText='showDetails';
+                isshown=false;
+            }
+            else{
+                document.getElementById('details').style.display='block';
+                document.getElementById('btn').innerText='hidedetails';
+                isshown=true;
+
+            }
+
+        })
+
+        </script>
+</body>
+
+</html>

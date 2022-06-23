@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // const cars = [
+        //     {name:'bmw',model:'XS'},
+        //     {name:'audi',model:'A8'},
+        //     {name:'mercedes',model:'C class'}
+        // ];
+
+
+        // console.log(cars);
+
+     const obj = {
+        cars:[
+            "bmw",
+            "audi",
+            "mercedes"
+        ],
+        person:[
+            "john",
+            "jane",
+            "joe"
+        ],
+        rank:[
+            1,
+            2,
+            3
+        ],
+     }
+     function inside objects
+
+     const person3 = {
+        name:'john',
+        age:30,
+        calc_age: function(){
+            return 2022-this.age;
+        }
+     }
+     console.log(person3.calc_age());
+     
+     const string__= JSON.stringify(person3);
+     localStorage.setItem('object',string__ );
+
+
+    
+
+    </script>
+
+    
+</body>
+</html>

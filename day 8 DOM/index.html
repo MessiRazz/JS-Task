@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .test{
+            width: 600px;
+            height: 400px;
+            background: yellow;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <h1 id="raj">RAJ</h1> -->
+    <div class="test">
+
+    </div>
+    <button id="btn">SHOW DIV</button>
+
+
+
+    <script>
+        // setTimeout( ()=> document.getElementById("raj").innerHTML = 'Bye world',3000);
+        // // setTimeout( ()=> document.getElementById("raj").style.color='red',3000);
+        // function pname(){
+
+            //     setTimeout( ()=> document.getElementById("raj").innerHTML = 'R',3000);
+        //     setTimeout( ()=> document.getElementById("raj").style.color='red',3000);
+        //     setTimeout( ()=> document.getElementById("raj").innerHTML = 'RA',4000);
+        //     setTimeout( ()=> document.getElementById("raj").style.color='blue',4000);
+        //     setTimeout( ()=> document.getElementById("raj").innerHTML = 'RAJ',5000);
+        //     setTimeout( ()=> document.getElementById("raj").style.color='orange',5000);  
+            
+        // }
+        // pname();
+        // setInterval(pname,6000);
+        //   setTimeout(()=> document.getElementsByClassName("test")[0].style.display = "none",3000);
+         
+        let colors = ["red","yellow","green","blue","black"];
+        
+        document.getElementById("btn").addEventListener('click',function(){
+        //   alert("clicked");
+        let rand = parseInt(Math.random()*colors.length)
+          document.getElementsByClassName('test')[0].style.display='block';
+          document.getElementsByClassName('test')[0].style.background=colors[rand];
+          })
+
+    
+
+    
+    </script>
+   
+    
+</body>
+</html>

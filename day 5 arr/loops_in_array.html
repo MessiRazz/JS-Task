@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops in array</title>
+</head>
+<body>
+    <script>
+        const names = ["sudep","raj","hari"];
+        for(let index = 0 ;index < names.length;index++){
+
+            const element = names[index];
+             document.write(`<h2>${element}<h2/>`)
+                
+            }
+            const even=[];
+
+            for( let num =0; num<=100; num++){
+                if(num%2==0){
+                    even.push(num);
+
+                }
+               
+            }
+            document.write(even)
+            let sum = 0;
+
+            for ( let j =0; j<even.length;j++){
+                sum =sum+ even[j];
+            }
+            document.write(`<br>  ${sum}`)
+
+
+
+            // let index =0 ;
+            // while(index<even.length){
+            //     if(even[index]%4 ==0){
+            //         document.write(even[index])
+            //     }
+                
+            // }
+            // associative array
+            const assoarr= []
+            assoarr["name"]="sudeep";
+            console.log(assoarr);
+            document.write(Array.isArray(even));
+
+
+            let counter = new Array(26).fill(0);
+            let name = prompt("enter your name:");
+            for(let index = 0; index<name.length;index++){
+            const element = name [index];
+            if(element ==="a"|| element==="A"){
+            counter[0]+=1;
+        }
+        if(element ==="b"|| element==="B"){
+            counter[1]+=1;
+    }
+    if(element ==="c"|| element==="D"){
+            counter[2]+=1;
+    }
+    if(element ==="d"|| element==="D"){
+            counter[3]+=1;
+    }
+    if(element ==="d"|| element==="D"){
+            counter[4]+=1;
+    }
+}
+document.write(`<h2>${name}</h2>`)
+        document.write(` given name has ${counter[0]} a`);
+        document.write(`given name has ${counter[1]} b`);
+        document.write(`given name has ${counter[2]} c`);
+        document.write(`given name has ${counter[3]} d`);
+        document.write(`given name has ${counter[4]} e`);
+            // let pname = prompt("enter your partner name");  
+
+
+        
+
+
+    </script>
+</body>
+</html>
